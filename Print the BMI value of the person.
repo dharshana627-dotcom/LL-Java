@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        double w=sc.nextDouble();
+        double h=sc.nextDouble();
+        double bmi=w/(h*h);
+        System.out.printf("BMI = %.2f\n",bmi);
+    }
+}
+
+Input:
+70
+1.75
+Expected Output:
+BMI = 22.86
