@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        double n=sc.nextDouble();
+        int pre=sc.nextInt();
+        System.out.printf("%."+pre+"f\n",n);
+    }
+}
+
+Input:
+123.4567
+Expected Output:
+123.46
