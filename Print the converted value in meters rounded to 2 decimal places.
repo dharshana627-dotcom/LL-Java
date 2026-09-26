@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        double m=num*0.0254;
+        System.out.printf("%d inch is %.2f meters%n",num,m);
+    }
+}
+
+Input:
+243
+Expected Output:
+243 inch is 6.17 meters
