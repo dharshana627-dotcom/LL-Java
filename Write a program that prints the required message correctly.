@@ -1,0 +1,11 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        System.out.println("Welcome to the World of \"Java\" Programming");
+    }
+}
+
+Input:
+Welcome to the World of "Java" Programming
+Expected Output:
+Welcome to the World of "Java" Programming
