@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int age=sc.nextInt();
+        
+        int m=age*12;
+        int d=age*365;
+        int hrs=age*365*24;
+        int s=age*365*24*3600;
+        
+        System.out.println("Ages in Months: "+m);
+        System.out.println("Ages in Days: "+d);
+        System.out.println("Ages in Hours: "+hrs);
+        System.out.println("Ages in Seconds: "+s);
+    }
+}
+
+Input:
+2
+Expected Output:
+Ages in Months: 24
+Ages in Days: 730
+Ages in Hours: 17520
+Ages in Seconds: 63072000
