@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int hrs = sc.nextInt();
+        double rate = sc.nextDouble();
+        
+        double w=hrs*rate;
+        double m=(hrs*rate*52)/12;
+        double a=hrs*rate*52;
+        
+        System.out.printf("Weekly Gross Pay: %.1f%n", w);
+        System.out.printf("Monthly Gross Pay: %.1f%n", m);
+        System.out.printf("Annual Gross Pay: %.1f%n", a);
+    }
+}
+
+Input:
+40
+10.0
+Expected Output:
+Weekly Gross Pay: 400.0
+Monthly Gross Pay: 1733.3
+Annual Gross Pay: 20800.0
