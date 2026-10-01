@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double r = sc.nextDouble();
+        double l = sc.nextDouble();
+        double w = sc.nextDouble();
+        double b = sc.nextDouble();
+        double h = sc.nextDouble();
+        double pi = 3.14159;
+        double cir = pi * r * r;
+        double rec = l * w;
+        double tri = 0.5 * b * h;
+        System.out.printf("Area of a Circle: %.5f%n", cir);
+        System.out.printf("Area of a Rectangle: %.1f%n", rec);
+        System.out.printf("Area of a Triangle: %.1f%n", tri);
+    }
+}
+
+Input:
+2.0
+3.0 4.0
+5.0 6.0
+Expected Output:
+Area of a Circle: 12.56636
+Area of a Rectangle: 12.0
+Area of a Triangle: 15.0
