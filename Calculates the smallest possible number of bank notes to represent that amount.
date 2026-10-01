@@ -1,0 +1,40 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int amt = sc.nextInt();
+        
+        int n1=amt/100;
+        amt%=100;
+        int n2=amt/50;
+        amt%=50;
+        int n3=amt/20;
+        amt%=20;
+        int n4=amt/10;
+        amt%=10;
+        int n5=amt/5;
+        amt%=5;
+        int n6=amt/2;
+        amt%=2;
+        int n7=amt;
+        
+        System.out.println(n1 + " Note(s) of 100.00");
+        System.out.println(n2 + " Note(s) of 50.00");
+        System.out.println(n3 + " Note(s) of 20.00");
+        System.out.println(n4 + " Note(s) of 10.00");
+        System.out.println(n5 + " Note(s) of 5.00");
+        System.out.println(n6 + " Note(s) of 2.00");
+        System.out.println(n7 + " Note(s) of 1.00");
+    }
+}
+
+Input:
+375
+Expected Output:
+3 Note(s) of 100.00
+1 Note(s) of 50.00
+1 Note(s) of 20.00
+0 Note(s) of 10.00
+1 Note(s) of 5.00
+0 Note(s) of 2.00
+0 Note(s) of 1.00
