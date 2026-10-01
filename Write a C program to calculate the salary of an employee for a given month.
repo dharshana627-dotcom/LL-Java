@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        String empId=sc.nextLine();
+        int hrs=sc.nextInt();
+        double amt=sc.nextDouble();
+        double salary=hrs*amt;
+        System.out.println("Employee's ID = "+empId);
+        System.out.printf("Salary = Rs. %.2f%n",salary);
+    }
+}
+
+Input:
+0123
+40
+2000
+Expected Output:
+Employee's ID = 0123
+Salary = Rs. 80000.00
