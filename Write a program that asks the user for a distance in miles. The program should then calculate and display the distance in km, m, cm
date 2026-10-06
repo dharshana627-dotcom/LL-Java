@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        double distance=sc.nextDouble();
+        
+        double km=distance*1.60934;
+        double m=km*1000;
+        double cm=m*100;
+        
+        System.out.printf("Kilometers: %.5f%n",km);
+        System.out.printf("Meters: %.2f%n",m);
+        System.out.printf("Centimeters: %.1f%n",cm);
+    }
+}
+
+Input:
+1
+Expected Output:
+Kilometers: 1.60934
+Meters: 1609.34
+Centimeters: 160934.0
