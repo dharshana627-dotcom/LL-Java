@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        double distance=sc.nextDouble();
+        
+        double yards=distance*1760;
+        double feet=distance*5280;
+        double inches=distance*63360;
+        
+        System.out.printf("Yards: %.1f%n",yards);
+        System.out.printf("Feet: %.1f%n",feet);
+        System.out.printf("Inches: %.1f%n",inches);
+    }
+}
+
+Input:
+5.75
+Expected Output:
+Yards: 10120.0
+Feet: 30360.0
+Inches: 364320.0
