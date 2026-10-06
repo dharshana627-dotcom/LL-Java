@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+        int res=age*7;
+        System.out.println(res+" years old in dog years.");
+    }
+}
+
+Input:
+3
+Expected Output:
+21 years old in dog years.
