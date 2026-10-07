@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int day = sc.nextInt();
+
+        int years=day/365;
+        int rem=day%365;
+        int weeks=rem/7;
+        int days=rem%7;
+
+        System.out.println("Years: "+years);
+        System.out.println("Weeks: "+weeks);
+        System.out.println("Days: "+days);
+    }
+}
+
+Input:
+1200
+Expected Output:
+Years: 3
+Weeks: 15
+Days: 0
