@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int f = n/10000;
+        int s = (n / 10) % 10;
+        int sum = f+s;
+        System.out.println(sum);
+    }
+}
+
+Input:
+87554
+Expected Output:
+13
