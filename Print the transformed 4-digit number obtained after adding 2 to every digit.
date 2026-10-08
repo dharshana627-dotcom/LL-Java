@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int d1 = (n/1000)%10;
+        int d2 = (n/100)%10;
+        int d3 = (n/10)%10;
+        int d4 = n%10;
+        d1 = (d1+2)%10;
+        d2 = (d2+2)%10;
+        d3 = (d3+2)%10;
+        d4 = (d4+2)%10;
+        System.out.println(""+d1+d2+d3+d4);
+    }
+}
+
+Input:
+9695
+Expected Output:
+1817
