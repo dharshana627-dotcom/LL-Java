@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int cm = sc.nextInt();
+
+        double inches = cm/2.54;
+        int feet = (int)(inches/12);
+        double rem = inches%12;
+
+        System.out.printf("Height in feet and inches: %d' %.1f\"%n", feet, rem);
+    }
+}
+
+Input:
+12
+Expected Output:
+Height in feet and inches: 0' 4.7"
