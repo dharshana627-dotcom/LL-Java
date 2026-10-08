@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int s1 = sc.nextInt();
+        int s2 = sc.nextInt();
+        int s3 = sc.nextInt();
+        
+        int sum = s1+s2+s3;
+        double avg = sum/3.0;
+        
+        System.out.println("Total Marks: "+sum);
+        System.out.printf("Average Marks: %.2f%n",avg);
+    }
+}
+
+Input:
+56 78 34
+Expected Output:
+Total Marks: 168
+Average Marks: 56.00
