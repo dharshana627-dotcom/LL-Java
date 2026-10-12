@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]aargs){
+        Scanner sc = new Scanner(System.in);
+        long n = sc.nextLong();
+        long div = (long)Math.sqrt(n);
+        if(div*div==n){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
+    }
+}
+
+Input:
+100
+Expected Output:
+Yes
+Input:
+34
+Expected Output:
+No
