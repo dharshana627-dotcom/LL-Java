@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        long s = sc.nextInt();
+        long e = sc.nextInt();
+        long sum=0;
+        for(long i=s;i<=e;i++){
+            sum+=i;
+        }
+        System.out.println(sum);
+    }
+}
+
+Input:
+10 20
+Expected Output:
+165
