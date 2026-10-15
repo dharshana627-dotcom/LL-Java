@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        long n1 = sc.nextLong();
+        long n2 = sc.nextLong();
+        long a = n1,b = n2;
+        while(n1!=n2){
+            if(n1>n2){
+               n1=n1-n2;
+            }else{
+                n2=n2-n1;
+            }
+        }
+        long gcd = n1;
+        long lcm = (a*b)/gcd;
+        System.out.println(lcm);
+    }
+}
+
+Input:
+10 20
+Expected Output:
+20
