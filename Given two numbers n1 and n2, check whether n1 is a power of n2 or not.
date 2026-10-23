@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        long n1 = sc.nextLong();
+        long n2 = sc.nextLong();
+        long temp=n1;
+        while(temp%n2==0){
+            temp=temp/n2;
+        }
+        if(temp==1){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
+    }
+}
+
+Input:
+25 5
+Expected Output:
+Yes
+Input:
+1020 10
+Expected Output:
+No
