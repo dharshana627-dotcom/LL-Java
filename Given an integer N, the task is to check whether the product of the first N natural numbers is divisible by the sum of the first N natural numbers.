@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long sum=0,pro=1;
+        for(int i=1;i<=n;i++){
+            sum=sum+i;
+            pro=pro*i;
+        }
+        if(pro%sum==0){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
+    }
+}
+
+Input:
+20
+Expected Output:
+Yes
+Input:
+10
+Expected Output:
+No
