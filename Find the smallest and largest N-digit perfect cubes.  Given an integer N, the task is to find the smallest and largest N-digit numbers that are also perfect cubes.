@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long min1=1;
+        for(int i=1;i<n;i++){
+            min1*=10;
+        }
+        long max1=min1*10-1;
+        long min2=0,max2=0;
+        for(long i=1;i*i*i<=max1;i++){
+            long cube=i*i*i;
+            if(cube>=min1 && min2==0){
+                min2=cube;
+            }
+            if(cube>=min1){
+                max2=cube;
+            }
+        }
+        System.out.println(min2+" "+max2);
+    }
+}
+
+Input:
+2
+Expected Output:
+27 64
